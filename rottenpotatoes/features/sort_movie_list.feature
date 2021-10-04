@@ -25,7 +25,12 @@ Background: movies have been added to database
 Scenario: sort movies alphabetically
   When I follow "Movie Title"
   # your steps here
+  And I am on the RottenPotatoes home page
+  Then I should see the movies in ascending order
 
 Scenario: sort movies in increasing order of release date
   When I follow "Release Date"
   # your steps here
+  And I am on the RottenPotatoes home page
+  Then I should see the release_date in ascending order
+  
